@@ -5,6 +5,15 @@
         Data data = new();
         public Menu()
         {
+            Teacher t = new() {
+                Id = 1,
+                Name = "Flemming",
+                DoB = new DateTime(1967, 8, 25),
+                Subject = data.subjectList[2]
+            };
+
+            AddTeacher(t);
+
             Start();
         }
 
@@ -34,6 +43,12 @@
                 }
             }
         } 
+
+        private void AddTeacher(Teacher teacher)
+        {
+            data.teacherList.Add(teacher);
+        }
+
         private void AddTeacher()
         {
             Console.Write("Id : ");
