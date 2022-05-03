@@ -17,7 +17,7 @@
             Start();
         }
 
-        public void Start()
+        private void Start()
         {
             while (true)
             {
